@@ -10,11 +10,7 @@ public class Test {
             client = new Client();
         } catch (IOException e) {
             e.printStackTrace();
-        }
-        try {
-            Thread.sleep(5000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
+            return;
         }
         try {
             client.sendPoints(new Point[]{new Point(5, 4), new Point(0, 0)});
